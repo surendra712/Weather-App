@@ -1,0 +1,40 @@
+## Instructions to Push Your Code to GitHub
+
+Since direct authentication through the command line might be challenging, here are step-by-step instructions to push your code to GitHub:
+
+### Option 1: Using Git with Personal Access Token
+
+1. **Create a Personal Access Token (PAT) on GitHub**:
+   - Go to GitHub.com and log in
+   - Click on your profile picture in the top right corner
+   - Go to Settings > Developer settings > Personal access tokens > Tokens (classic)
+   - Click "Generate new token" and select "Generate new token (classic)"
+   - Give it a name like "Weather App Push"
+   - Select the "repo" scope to allow access to your repositories
+   - Click "Generate token"
+   - **IMPORTANT**: Copy the token immediately as you won't be able to see it again
+
+2. **Use the token to push your code**:
+   ```
+   git remote set-url origin https://[YOUR_USERNAME]:[YOUR_TOKEN]@github.com/surendra712/Weather-App.git
+   git push -u origin main
+   ```
+   Replace [YOUR_USERNAME] with your GitHub username and [YOUR_TOKEN] with the token you generated.
+
+### Option 2: Using GitHub Desktop (Easiest Method)
+
+1. Download and install GitHub Desktop from https://desktop.github.com/
+2. Open GitHub Desktop and sign in with your GitHub account
+3. Add your local repository (File > Add local repository)
+4. Select the folder: d:/Projects/weather-notification
+5. Publish the repository to GitHub
+
+### Option 3: Manual Upload on GitHub.com
+
+1. Go to https://github.com/surendra712/Weather-App
+2. Click on "Add file" > "Upload files"
+3. Drag and drop all your HTML files and README.md
+4. Add a commit message
+5. Click "Commit changes"
+
+Your files are already committed locally, so any of these methods will work to get them on GitHub.
